@@ -63,7 +63,7 @@
       (__v).__m <<= 1;                                                        \
     else                                                                      \
       (__v).__m = 2;                                                          \
-    (__v).__data = realloc((__v).__data, (__v).__t * ++(__v).__m);            \
+    (__v).__data = realloc((__v).__data, (__v).__t * (__v).__m);              \
     if (!(__v).__data)                                                        \
     {                                                                         \
       (__v).__e = CVEC_EOOM;                                                  \
